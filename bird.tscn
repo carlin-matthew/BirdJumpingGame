@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://djecfjb5wt7sf"]
+
+[ext_resource type="Texture2D" uid="uid://drwskd8njgv5h" path="res://files/FlappyBird-01.png" id="1_g5k2s"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_crnqq"]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+
+[node name="FlappyBird01" type="Sprite2D" parent="."]
+position = Vector2(-16, -17)
+texture = ExtResource("1_g5k2s")
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_crnqq")
